@@ -1,0 +1,225 @@
+.container{
+    display: grid;
+    grid-template-columns: minmax(40px,250px) 3fr;
+    grid-template-rows: 1fr 5fr;
+    font-family:"Roboto Mono";
+}
+.navbar{
+    grid-row: 1/-1;
+    min-width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    background-color:#0ea5e9;
+    min-height: 750px;
+    color: aliceblue;
+
+}
+.navbar img{
+    color: white;
+}
+.navbar li{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+.navbar ul{
+    display: grid;
+}
+.dash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.5fr;
+    min-width: 100%;
+}
+.upper{
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+.search{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.input{
+    margin-left: 50px;
+}
+.input input{
+    min-width: 500px;
+    min-height: 25px;
+    border-radius: 200px;
+    background-color: #cbd5e1;
+    border-style: none;
+    
+}
+.bell{
+    margin-left: 250px;
+}
+.profilepic img{
+    margin-left: 50px;
+    border-radius: 25px;
+}
+.upper .name{
+    margin-left: 50px;
+}
+.lower{
+    grid-row: 2/3;
+    display: flex;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 25px;
+    margin-top: 10px;
+    gap: 5px;
+}
+.text .name h2{
+    margin:0;
+}
+.lower .button{
+    margin-left: 300px;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.button button{
+    max-height:40px;
+    min-width: 100px;
+    border-radius: 50px;
+    color: white;
+    background-color: #0ea5e9;
+    border-style: none;
+    
+}
+
+.content{
+    padding-left: 25px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #cbd5e1;
+    padding-bottom: 100px;
+}
+.projects{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,400px));
+    gap: 20px;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+}
+.project{
+    grid-column: 1/-1;
+
+}
+.card{
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    border-left: #facc15;;
+    border-left-width: 15px;
+    border-left-style: solid;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card h3,.info h3{
+    padding: 0%;
+    margin: 0%;
+}
+.logo{
+    display: flex;
+    margin-right: 5px;
+    gap: 10px;
+    justify-content: end;
+}
+.project,.announce,.trend{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 900;
+}
+.extra{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.announcements{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    margin-right: 50px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    min-width: 275px;
+    min-height: 200px;
+    padding-left: 30px;
+    border-radius: 10px;
+    padding-right: 30px;
+}
+.info .head{
+    font-weight: bolder;
+}
+.info p{
+    font-size: xx-small;
+}
+.info .line{
+    border-bottom-style: solid;
+    border-color: #cbd5e1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.info .noline{
+    padding-top: 15px;
+}
+.trending{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    margin-right: 50px;
+}
+.trend{
+    margin-top: 25px;
+}
+.account{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    min-width: 275px;
+    min-height: 200px;
+    padding-left: 30px;
+    border-radius: 15px;
+    padding-right: 30px;
+    
+}
+.acc{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.acc img{
+    border-radius: 25px;
+    place-self: center end;
+}
+.profile{
+    place-self: center start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.prof{
+    color: gray;
+    font-size: small;
+}
